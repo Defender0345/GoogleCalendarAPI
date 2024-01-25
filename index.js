@@ -5,14 +5,12 @@ const { OAuth2 } = google.auth;
 // Get this info from https://console.cloud.google.com/apis/credentials/oauthclient/
 // Its the client ID and client secret
 const oAuth2Client = new OAuth2(
-  `198825770419-rg4mtvvlute6bbnc3747t93ib9ae9qb3.apps.googleusercontent.com`,
-  `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`
 );
 
 // Get this info from https://developers.google.com/oauthplayground/ after registering
 oAuth2Client.setCredentials({
   refresh_token:
-    '1//04kxdC2oBuxJuCgYIARAAGAQSNwF-L9IrrZMzCHPklqcOIPhOiaZXNsnlvbo_sWB_f3XajTtKvOvBMu3kmuUKNA1nq91eHGc2P2k',
+    ,
 });
 
 const calendar = google.calendar({ version: 'v3', auth: oAuth2Client });
